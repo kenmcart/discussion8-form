@@ -10,15 +10,29 @@
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: #000000;
+    background: #a4b6d0;
   }
+  
+  * {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+
+  .skip a {
+    position: relative;
+    overflow: hidden;
+    top: -40px;
+}
+
+.skip a:focus {
+    top: 20px;
+}
 
   .radio {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     /* background: #575294; */
-    color: #702082;
+    color: #000000;
   }
 
   #name {
@@ -26,8 +40,8 @@
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: #ffffff;
+    color: #000000;
   }
 
   #message {
@@ -39,15 +53,25 @@
   input,
   textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     width: 100%;
+  }
+
+  #message {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  #name {
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 
   input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #4CAF50;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
